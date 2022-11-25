@@ -26,10 +26,11 @@ public class Author {
         if (this == other) return true;
         if (other == null || getClass() != other.getClass()) return false;
         Author author = (Author) other;
-        return Objects.equals(firstName,author.firstName) && Objects.equals(middleName, author.middleName);
+        return Objects.equals(firstName, author.firstName) && Objects.equals(middleName, author.middleName);
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(firstName, middleName);
     }
 }
